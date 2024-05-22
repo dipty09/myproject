@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisex Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css reset*/
+    body{
+        color:black;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('bgimage.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+        border:2px ;
+        display: inline-block;
+        position: absolute;
+        left:60px;
+        top:20px;
+ }
+ .left img{
+    width:95px;
+}
+.left div{
+    color: blue;
+}
+    .mid{
+
+        display: block;
+        margin:12px auto;
+        width : 50%;
+        border:2px;
+    }
+    .right{
+        position: absolute;
+        right:12px;
+        top:20px;
+        display:inline-block;
+        border: 2px ;
+
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+       /* color: white;
+        text-decoration: none;*/
+        font-size: 25px;
+    }
+    .navbar li a{
+        color:black;
+        text-decoration: none;
+        padding: 34px 23px;;
+    }
+    .navbar li a :hover navbar li a.active{
+        color:grey;
+        text-decoration: underline;
+         
+    }
+    .btn{
+        margin:0px 9px;
+        color:white;
+        background-color: black;
+        padding: 4px 14px;
+        border:2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor:pointer;
+     }
+     .btn:hover{
+        background-color: rgb(74, 64, 64);
+     }
+     .container{
+        border: 2px;
+        margin:30px 10px;
+        padding:15px 15px;
+        width:33%;
+        top:35px;
+        border-radius: 2px;
+     }
+     .form-group input{
+        text-align: left;
+        width:120px;
+        padding:8px;
+        border:2px solid black;
+        margin:11px auto;
+        border-radius: 12px;
+        color:black;
+     }
+     .container h1{
+        text-align:left;
+     }
+     .container button{
+        margin:auto;
+        width:23%;
+     }
+</style>
+<body>
+    <head class="header">
+        <!--left box for logo-->
+        <div class="left">
+           <img src="gymlogo.png" alt="">
+             <div>UNISEX GYM</div>
+        </div>
+        <!-- mid box for navbar-->
+         <div class="mid">
+            <ul class="navbar">
+                 <li><a href="" class="active">Home</a></li>
+                 <li><a href="./about.html" class="active">About us</a></li>
+                <li><a href="./fitness.html"class="active">Fitness calender</a></li>
+                <li><a href="./contact.html"class ="active">Contact us</a></li>
+            </ul>
+         </div>
+        <!-- right box for  buttons-->
+        <div class="right">
+            <button class="btn">Call Us Know</button>
+            <button class="btn">Email us</button>
+        </div>
+    </head>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your emailid">
+            </div>  
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your phonenumber">
+            </div>  
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality">
+            </div>  
+            
+            <button class="btn">Submit</button>
+        </from>
+    </div>
+</body>
+</html>
